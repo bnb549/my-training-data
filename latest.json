@@ -9,13 +9,13 @@
     "quick_stats": {
       "total_training_hours": 3.59,
       "total_training_formatted": "3h35m",
-      "total_activities": 8,
+      "total_activities": 9,
       "total_tss": 249
     }
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-08T21:00:02.689147",
+    "last_updated": "2026-03-08T21:34:38.936657",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.74"
@@ -32,10 +32,10 @@
     },
     {
       "metric": "race_week_tsb",
-      "value": -14.3,
+      "value": -15.4,
       "severity": "warning",
       "threshold": "TSB target 0-10",
-      "context": "Projected race-day TSB -14.3 is below target range 0-10. Consider additional rest to reach target.",
+      "context": "Projected race-day TSB -15.4 is below target range 0-10. Consider additional rest to reach target.",
       "persistence_days": null,
       "tier": 1
     }
@@ -74,13 +74,13 @@
         "value": 0.99
       },
       "tsb": {
-        "status": "green",
-        "value": -14.3
+        "status": "amber",
+        "value": -15.4
       }
     },
     "signal_summary": {
-      "green": 5,
-      "amber": 1,
+      "green": 4,
+      "amber": 2,
       "red": 0,
       "unavailable": 1
     },
@@ -93,15 +93,16 @@
     "race_week_defers": true,
     "modification": {
       "triggers": [
-        "sleep"
+        "sleep",
+        "tsb"
       ],
       "suggested_adjustments": {
-        "intensity": "preserve",
+        "intensity": "reduce",
         "volume": "reduce",
         "cap_zone": null
       }
     },
-    "reason": "P2 signal count. 1 amber (sleep) >= threshold 1.",
+    "reason": "P2 signal count. 2 amber (sleep, tsb) >= threshold 1.",
     "alarm_refs": []
   },
   "history": {
@@ -115,7 +116,7 @@
     "period_description": "Last 7 days of training (including today)",
     "note": "Duration calculated from API moving_time field.",
     "total_duration_decimal_hours": 3.59,
-    "total_activities": 8,
+    "total_activities": 9,
     "by_activity_type": {
       "Ride": {
         "duration_decimal_hours": 3.59,
@@ -125,7 +126,7 @@
       },
       "Unknown": {
         "duration_decimal_hours": 0.0,
-        "count": 1,
+        "count": 2,
         "tss": 0,
         "distance_km": 0.0
       }
@@ -133,10 +134,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 25.49,
-      "atl": 39.8,
-      "tsb": -14.31,
-      "ramp_rate": 2.08,
+      "ctl": 25.73,
+      "atl": 41.13,
+      "tsb": -15.4,
+      "ramp_rate": 2.31,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -367,12 +368,12 @@
     "p_max": 1046,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-08T21:00:02.688509",
+    "calculation_timestamp": "2026-03-08T21:34:38.936020",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
-      "activities_7d": 8,
-      "activities_28d": 18,
+      "activities_7d": 9,
+      "activities_28d": 19,
       "planned_workouts_7d": 5,
       "ftp_history_days": {
         "indoor": 0,
@@ -381,6 +382,40 @@
     }
   },
   "recent_activities": [
+    {
+      "id": "17653905727",
+      "date": "2026-03-08T15:39:23",
+      "type": "Unknown",
+      "name": "",
+      "duration_hours": 0.0,
+      "distance_km": 0.0,
+      "tss": null,
+      "intensity_factor": null,
+      "avg_power": null,
+      "normalized_power": null,
+      "avg_hr": null,
+      "max_hr": null,
+      "avg_cadence": null,
+      "avg_speed": null,
+      "max_speed": null,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": null,
+      "calories": null,
+      "carbs_used": null,
+      "carbs_ingested": null,
+      "variability_index": null,
+      "decoupling": null,
+      "efficiency_factor": null,
+      "hrrc": null,
+      "elevation_m": null,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": null
+    },
     {
       "id": "i130449498",
       "date": "2026-03-08T09:39:59",
@@ -981,7 +1016,7 @@
     "total_training_hours": 3.59,
     "total_training_formatted": "3h35m",
     "total_tss": 249,
-    "activities_count": 8,
+    "activities_count": 9,
     "avg_hrv": 143.8,
     "avg_resting_hr": 50.3
   },
@@ -1019,18 +1054,18 @@
       "event_moving_time_seconds": 1800,
       "days_until_event": 0,
       "current_day": "D-0",
-      "ctl_baseline": 25.5,
-      "normal_weekly_tss": 178.4,
+      "ctl_baseline": 25.7,
+      "normal_weekly_tss": 180.1,
       "race_week_tss_budget": {
-        "min": 89,
-        "max": 116
+        "min": 90,
+        "max": 117
       },
       "race_week_tss_spent": 249,
       "race_week_tss_remaining": {
         "min": 0,
         "max": 0
       },
-      "projected_race_day_tsb": -14.3,
+      "projected_race_day_tsb": -15.4,
       "tsb_target_range": {
         "min": 0,
         "max": 10
@@ -1059,7 +1094,7 @@
       "go_no_go": {
         "tsb_status": "flag",
         "notes": [
-          "Projected race-day TSB -14.3 is significantly below target range 0-10. Fatigue may impact performance."
+          "Projected race-day TSB -15.4 is significantly below target range 0-10. Fatigue may impact performance."
         ]
       }
     }
