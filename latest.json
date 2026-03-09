@@ -9,57 +9,38 @@
     "quick_stats": {
       "total_training_hours": 3.59,
       "total_training_formatted": "3h35m",
-      "total_activities": 9,
+      "total_activities": 8,
       "total_tss": 249
     }
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-08T23:58:29.175362",
+    "last_updated": "2026-03-09T02:55:02.164235",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.74"
   },
-  "alerts": [
-    {
-      "metric": "race_week",
-      "value": 0,
-      "severity": "info",
-      "threshold": "RACE_B within 7 days",
-      "context": "Race week D-0 of 'candy strip CRIT'. Today: Race day, 0-0 TSS. Race effort",
-      "persistence_days": null,
-      "tier": 1
-    },
-    {
-      "metric": "race_week_tsb",
-      "value": -15.4,
-      "severity": "warning",
-      "threshold": "TSB target 0-10",
-      "context": "Projected race-day TSB -15.4 is below target range 0-10. Consider additional rest to reach target.",
-      "persistence_days": null,
-      "tier": 1
-    }
-  ],
+  "alerts": [],
   "readiness_decision": {
-    "recommendation": "modify",
-    "priority": 2,
+    "recommendation": "go",
+    "priority": 3,
     "signals": {
       "hrv": {
-        "status": "green",
-        "value": 145.0,
-        "baseline_7d": 143.8,
-        "delta_pct": 0.8
+        "status": "unavailable",
+        "value": null,
+        "baseline_7d": 140.7,
+        "delta_pct": null
       },
       "rhr": {
-        "status": "green",
-        "value": 51,
-        "baseline_7d": 50.3,
-        "delta_bpm": 0.7
+        "status": "unavailable",
+        "value": null,
+        "baseline_7d": 51.2,
+        "delta_bpm": null
       },
       "sleep": {
-        "status": "amber",
-        "hours": 6.59,
-        "quality": 2
+        "status": "unavailable",
+        "hours": null,
+        "quality": null
       },
       "acwr": {
         "status": "green",
@@ -70,39 +51,29 @@
         "value": null
       },
       "ri": {
-        "status": "green",
-        "value": 0.99
+        "status": "unavailable",
+        "value": null
       },
       "tsb": {
-        "status": "amber",
-        "value": -15.4
+        "status": "green",
+        "value": -10.5
       }
     },
     "signal_summary": {
-      "green": 4,
-      "amber": 2,
+      "green": 2,
+      "amber": 0,
       "red": 0,
-      "unavailable": 1
+      "unavailable": 5
     },
     "phase_context": {
-      "phase": "Taper",
-      "phase_week": 0,
-      "amber_threshold": 1,
-      "modifier_applied": "race_week_tightened"
+      "phase": "Build",
+      "phase_week": 4,
+      "amber_threshold": 3,
+      "modifier_applied": "build_loosened"
     },
-    "race_week_defers": true,
-    "modification": {
-      "triggers": [
-        "sleep",
-        "tsb"
-      ],
-      "suggested_adjustments": {
-        "intensity": "reduce",
-        "volume": "reduce",
-        "cap_zone": null
-      }
-    },
-    "reason": "P2 signal count. 2 amber (sleep, tsb) >= threshold 1.",
+    "race_week_defers": false,
+    "modification": null,
+    "reason": "P3 green light. 2 green, 0 amber (threshold 3), 0 red. Note: 5 signals unavailable \u2014 limited data.",
     "alarm_refs": []
   },
   "history": {
@@ -116,7 +87,7 @@
     "period_description": "Last 7 days of training (including today)",
     "note": "Duration calculated from API moving_time field.",
     "total_duration_decimal_hours": 3.59,
-    "total_activities": 9,
+    "total_activities": 8,
     "by_activity_type": {
       "Ride": {
         "duration_decimal_hours": 3.59,
@@ -126,7 +97,7 @@
       },
       "Unknown": {
         "duration_decimal_hours": 0.0,
-        "count": 2,
+        "count": 1,
         "tss": 0,
         "distance_km": 0.0
       }
@@ -134,10 +105,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 25.73,
-      "atl": 41.13,
-      "tsb": -15.4,
-      "ramp_rate": 2.31,
+      "ctl": 25.12,
+      "atl": 35.66,
+      "tsb": -10.54,
+      "ramp_rate": 2.26,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -176,20 +147,20 @@
     "current_metrics": {
       "weight_kg": 66.678154,
       "resting_hr": 51,
-      "hrv": 144.95236,
-      "sleep_quality": 2,
-      "sleep_hours": 6.59,
-      "sleep_formatted": "6h35m"
+      "hrv": null,
+      "sleep_quality": null,
+      "sleep_hours": null,
+      "sleep_formatted": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.99,
-    "hrv_baseline_7d": 143.8,
-    "rhr_baseline_7d": 50.3,
-    "hrv_baseline_28d": 146.6,
-    "rhr_baseline_28d": 51.1,
-    "latest_hrv": 144.95236,
-    "latest_rhr": 51,
+    "recovery_index": null,
+    "hrv_baseline_7d": 140.7,
+    "rhr_baseline_7d": 51.2,
+    "hrv_baseline_28d": 148.9,
+    "rhr_baseline_28d": 50.7,
+    "latest_hrv": null,
+    "latest_rhr": null,
     "acwr": 1.17,
     "acwr_interpretation": "optimal",
     "monotony": 0.77,
@@ -201,7 +172,7 @@
     "multi_sport_detected": false,
     "strain": 192.0,
     "stress_tolerance": 2.5,
-    "load_recovery_ratio": 2.5,
+    "load_recovery_ratio": null,
     "tss_7d_total": 249.0,
     "tss_28d_total": 852.0,
     "zone_distribution_7d": {
@@ -315,11 +286,9 @@
       ]
     },
     "phase_detection": {
-      "phase": "Taper",
+      "phase": "Build",
       "confidence": "medium",
-      "reason_codes": [
-        "RACE_IMMINENT"
-      ],
+      "reason_codes": [],
       "basis": {
         "stream_1": {
           "ctl_slope": 0.9,
@@ -328,25 +297,23 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": null,
-          "hard_sessions_planned": 2,
-          "race_proximity": 0,
-          "next_week_load": 0.46,
-          "plan_coverage_current_week": 0.4,
-          "plan_coverage_next_week": 0.8
+          "planned_tss_delta": 0.46,
+          "hard_sessions_planned": 4,
+          "race_proximity": null,
+          "next_week_load": null,
+          "plan_coverage_current_week": 0.8,
+          "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
         "stream_agreement": null
       },
       "previous_phase": "Build",
-      "phase_duration_weeks": 0,
+      "phase_duration_weeks": 4,
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Taper",
-    "phase_triggers": [
-      "RACE_IMMINENT"
-    ],
+    "phase_detected": "Build",
+    "phase_triggers": [],
     "seasonal_context": "Late Base / Build",
     "benchmark_indoor": {
       "current_ftp": 244,
@@ -368,11 +335,11 @@
     "p_max": 1046,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-08T23:58:29.174735",
+    "calculation_timestamp": "2026-03-09T02:55:02.163621",
     "data_quality": {
-      "hrv_data_points": 7,
-      "rhr_data_points": 7,
-      "activities_7d": 9,
+      "hrv_data_points": 6,
+      "rhr_data_points": 6,
+      "activities_7d": 8,
       "activities_28d": 19,
       "planned_workouts_7d": 5,
       "ftp_history_days": {
@@ -786,59 +753,9 @@
           "z7_time": 77
         }
       }
-    },
-    {
-      "id": "17583256910",
-      "date": "2026-03-02T14:33:00",
-      "type": "Unknown",
-      "name": "",
-      "duration_hours": 0.0,
-      "distance_km": 0.0,
-      "tss": null,
-      "intensity_factor": null,
-      "avg_power": null,
-      "normalized_power": null,
-      "avg_hr": null,
-      "max_hr": null,
-      "avg_cadence": null,
-      "avg_speed": null,
-      "max_speed": null,
-      "avg_pace": null,
-      "avg_temp": null,
-      "weather": null,
-      "humidity": null,
-      "wind_speed": null,
-      "work_kj": null,
-      "calories": null,
-      "carbs_used": null,
-      "carbs_ingested": null,
-      "variability_index": null,
-      "decoupling": null,
-      "efficiency_factor": null,
-      "hrrc": null,
-      "elevation_m": null,
-      "feel": null,
-      "rpe": null,
-      "zone_distribution": null
     }
   ],
   "wellness_data": [
-    {
-      "date": "2026-03-02",
-      "weight_kg": null,
-      "resting_hr": 45,
-      "hrv_rmssd": 162.75932,
-      "hrv_sdnn": null,
-      "sleep_hours": 9.22,
-      "sleep_formatted": "9h12m",
-      "sleep_quality": 1,
-      "sleep_score": 86.0,
-      "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
-      "avg_sleeping_hr": null,
-      "vo2max": null
-    },
     {
       "date": "2026-03-03",
       "weight_kg": null,
@@ -934,31 +851,25 @@
       "soreness": null,
       "avg_sleeping_hr": null,
       "vo2max": null
+    },
+    {
+      "date": "2026-03-09",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
     }
   ],
   "planned_workouts": [
-    {
-      "id": 97101385,
-      "date": "2026-03-08",
-      "name": "candy strip CRIT",
-      "type": "RACE_B",
-      "planned_tss": null,
-      "duration_hours": 0.5,
-      "duration_formatted": "30m",
-      "workout_summary": null,
-      "description": ""
-    },
-    {
-      "id": 96109859,
-      "date": "2026-03-08",
-      "name": "IntervalCoach - Recovery",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 1.43,
-      "duration_formatted": "1h26m",
-      "workout_summary": null,
-      "description": "Warmup\n- Hello Benjamin let's keep this very easy today 13m 60% pace\n\nMain Set\n- Steady recovery effort 64m 60% pace\n\nCooldown\n- Great recovery session Benjamin well done 9m 55% pace\n\n[Weekly Plan - Peak]"
-    },
     {
       "id": 96333785,
       "date": "2026-03-10",
@@ -1005,98 +916,29 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
+    "attempted": 4,
     "success": 1,
     "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 4
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 3.59,
     "total_training_formatted": "3h35m",
     "total_tss": 249,
-    "activities_count": 9,
-    "avg_hrv": 143.8,
-    "avg_resting_hr": 50.3
+    "activities_count": 8,
+    "avg_hrv": 140.7,
+    "avg_resting_hr": 51.2
   },
   "race_calendar": {
-    "next_race": {
-      "name": "candy strip CRIT",
-      "date": "2026-03-08",
-      "category": "RACE_B",
-      "type": "Ride",
-      "days_until": 0,
-      "moving_time_seconds": 1800,
-      "distance_meters": null
-    },
-    "all_races": [
-      {
-        "name": "candy strip CRIT",
-        "date": "2026-03-08",
-        "category": "RACE_B",
-        "type": "Ride",
-        "days_until": 0,
-        "moving_time_seconds": 1800,
-        "distance_meters": null
-      }
-    ],
+    "next_race": null,
+    "all_races": [],
     "taper_alert": {
       "active": false
     },
     "race_week": {
-      "active": true,
-      "event_name": "candy strip CRIT",
-      "event_date": "2026-03-08",
-      "event_category": "RACE_B",
-      "event_type": "Ride",
-      "event_duration_class": "short_intense",
-      "event_moving_time_seconds": 1800,
-      "days_until_event": 0,
-      "current_day": "D-0",
-      "ctl_baseline": 25.7,
-      "normal_weekly_tss": 180.1,
-      "race_week_tss_budget": {
-        "min": 90,
-        "max": 117
-      },
-      "race_week_tss_spent": 249,
-      "race_week_tss_remaining": {
-        "min": 0,
-        "max": 0
-      },
-      "projected_race_day_tsb": -15.4,
-      "tsb_target_range": {
-        "min": 0,
-        "max": 10
-      },
-      "today": {
-        "label": "Race day",
-        "load_target_tss": {
-          "min": 0,
-          "max": 0
-        },
-        "zones": "Race effort",
-        "purpose": "Go/no-go assessment. Execute race plan."
-      },
-      "carb_loading": {
-        "applicable": false,
-        "active": false,
-        "starts": "D-4",
-        "start_date": "2026-03-04",
-        "note": null
-      },
-      "opener": {
-        "day": "D-2",
-        "date": "2026-03-06",
-        "intensity": "more_intense"
-      },
-      "go_no_go": {
-        "tsb_status": "flag",
-        "notes": [
-          "Projected race-day TSB -15.4 is significantly below target range 0-10. Fatigue may impact performance."
-        ]
-      }
+      "active": false
     }
   }
 }
