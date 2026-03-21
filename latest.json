@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-21T18:51:33.248718",
+    "last_updated": "2026-03-21T19:31:37.005548",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.74"
@@ -103,7 +103,7 @@
       "atl": 25.87,
       "tsb": -0.98,
       "ramp_rate": 0.97,
-      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
+      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
       "eftp": 240.1,
@@ -263,14 +263,13 @@
         "note": "Compares 7d vs 28d Seiler TID to detect distribution shifts. pi_delta positive = more polarized acutely."
       }
     },
-    "consistency_index": 0.5,
+    "consistency_index": 1.0,
     "consistency_details": {
-      "planned_days": 2,
+      "planned_days": 1,
       "completed_days": 2,
       "matched_days": 1,
       "planned_dates": [
-        "2026-03-19",
-        "2026-03-21"
+        "2026-03-19"
       ],
       "completed_dates": [
         "2026-03-15",
@@ -289,12 +288,12 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.15,
-          "hard_sessions_planned": 2,
+          "planned_tss_delta": null,
+          "hard_sessions_planned": 0,
           "race_proximity": null,
-          "next_week_load": 0.3,
-          "plan_coverage_current_week": 0.4,
-          "plan_coverage_next_week": 0.4
+          "next_week_load": null,
+          "plan_coverage_current_week": 0.0,
+          "plan_coverage_next_week": 0.2
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -327,13 +326,13 @@
     "p_max": 1041,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-21T18:51:33.248075",
+    "calculation_timestamp": "2026-03-21T19:31:37.004841",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
       "activities_7d": 2,
       "activities_28d": 20,
-      "planned_workouts_7d": 2,
+      "planned_workouts_7d": 1,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -365,7 +364,7 @@
       "work_kj": 937.4,
       "calories": 917,
       "carbs_used": 243,
-      "carbs_ingested": null,
+      "carbs_ingested": 108,
       "variability_index": 1.1352657,
       "decoupling": -8.171726,
       "efficiency_factor": 1.5064102,
@@ -564,39 +563,6 @@
   ],
   "planned_workouts": [
     {
-      "id": 99029096,
-      "date": "2026-03-21",
-      "name": "IntervalCoach - Endurance Cruise",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
-      "workout_summary": null,
-      "description": "Warmup\n- Hey Benjamin! Endurance run awaits. 14m ramp 60-80% pace\n\nMain Set\n- Settle In 22m 70% pace\n- Aerobic 22m 70-80% pace\n- Cruise 23m 80-70% pace\n\nCooldown\n- Awesome job, Benjamin! Recover well. 9m ramp 70-60% pace\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 99029100,
-      "date": "2026-03-22",
-      "name": "IntervalCoach - Endurance Build",
-      "type": "WORKOUT",
-      "planned_tss": 68,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
-      "workout_summary": null,
-      "description": "Warmup\n- Hey Benjamin, endurance ride ahead! 14m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 17m 65-67% 85rpm\n- Build 17m 67-70% 88rpm\n- Upper Z2 17m 70-74% 90rpm\n- Cruise 16m 74-70% 88rpm\n\nCooldown\n- Fantastic ride, enjoy the recovery 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 99401005,
-      "date": "2026-03-26",
-      "name": "IntervalCoach - Over-Under Intervals",
-      "type": "WORKOUT",
-      "planned_tss": 63,
-      "duration_hours": 0.98,
-      "duration_formatted": "59m",
-      "workout_summary": null,
-      "description": "Warmup\n- Hey Benjamin! Over-Unders are here 9m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 8m 65-75% 85rpm\n\n4x\n- Under 3m 91% 88rpm\n- Over 2m 100% 95rpm\n- Recovery 3m 55% 80rpm\n\nRecovery\n- Over 4 2m 100% 95rpm\n- Endurance 8m 65-75% 85rpm\n\n\n[Weekly Plan - Build]"
-    },
-    {
       "id": 99734853,
       "date": "2026-03-28",
       "name": "IntervalCoach - Endurance Run",
@@ -609,12 +575,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
+    "attempted": 1,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 4
+    "bail_no_match": 1
   },
   "weekly_summary": {
     "total_training_hours": 2.3,
