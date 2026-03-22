@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-22T03:17:59.156617",
+    "last_updated": "2026-03-22T05:08:48.426595",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.74"
@@ -79,7 +79,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-03-08",
-    "age_days": 13,
+    "age_days": 14,
     "total_months": 10,
     "history_confidence": "medium"
   },
@@ -291,9 +291,9 @@
           "planned_tss_delta": null,
           "hard_sessions_planned": 0,
           "race_proximity": null,
-          "next_week_load": null,
+          "next_week_load": 0.32,
           "plan_coverage_current_week": 0.0,
-          "plan_coverage_next_week": 0.2
+          "plan_coverage_next_week": 0.4
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -326,7 +326,7 @@
     "p_max": 1041,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-22T03:17:59.155984",
+    "calculation_timestamp": "2026-03-22T05:08:48.426004",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
@@ -625,15 +625,26 @@
       "duration_formatted": "1h30m",
       "workout_summary": null,
       "description": "Warmup\n- Hey Benjamin! Long endurance run awaits. 14m ramp 60-80% pace\n\nMain Set\n- Settle In 22m 70% pace\n- Aerobic 22m 70-80% pace\n- Cruise 23m 80-70% pace\n\nCooldown\n- Fantastic effort, enjoy the cool down. 9m ramp 70-60% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 99887186,
+      "date": "2026-03-29",
+      "name": "IntervalCoach - Endurance Build",
+      "type": "WORKOUT",
+      "planned_tss": 67,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description": "Warmup\n- Hey Benjamin! Endurance ride ahead 14m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 17m 65% 85rpm\n- Build 17m 67% 88rpm\n- Upper Z2 17m 70-74% 90rpm\n- Cruise 16m 74-70% 88rpm\n\nCooldown\n- Great job, enjoy the spin down 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 1,
+    "attempted": 2,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 1
+    "bail_no_match": 2
   },
   "weekly_summary": {
     "total_training_hours": 3.5,
