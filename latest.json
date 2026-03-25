@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-24T23:56:55.446471",
+    "last_updated": "2026-03-25T02:56:06.153414",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.74"
@@ -36,21 +36,21 @@
     "priority": 3,
     "signals": {
       "hrv": {
-        "status": "green",
-        "value": 165.0,
-        "baseline_7d": 144.5,
-        "delta_pct": 14.2
+        "status": "unavailable",
+        "value": null,
+        "baseline_7d": 142.7,
+        "delta_pct": null
       },
       "rhr": {
-        "status": "green",
-        "value": 44,
-        "baseline_7d": 47.3,
-        "delta_bpm": -3.3
+        "status": "unavailable",
+        "value": null,
+        "baseline_7d": 47.7,
+        "delta_bpm": null
       },
       "sleep": {
-        "status": "green",
-        "hours": 8.44,
-        "quality": 1
+        "status": "unavailable",
+        "hours": null,
+        "quality": null
       },
       "acwr": {
         "status": "green",
@@ -61,19 +61,19 @@
         "value": null
       },
       "ri": {
-        "status": "green",
-        "value": 1.23
+        "status": "unavailable",
+        "value": null
       },
       "tsb": {
         "status": "green",
-        "value": -4.3
+        "value": -12.7
       }
     },
     "signal_summary": {
-      "green": 6,
+      "green": 2,
       "amber": 0,
       "red": 0,
-      "unavailable": 1
+      "unavailable": 5
     },
     "phase_context": {
       "phase": "Build",
@@ -83,7 +83,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 6 green, 0 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 2 green, 0 amber (threshold 3), 0 red. Note: 5 signals unavailable \u2014 limited data.",
     "alarm_refs": []
   },
   "history": {
@@ -115,11 +115,11 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 26.35,
-      "atl": 30.7,
-      "tsb": -4.35,
-      "ramp_rate": 1.84,
-      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
+      "ctl": 28.67,
+      "atl": 41.38,
+      "tsb": -12.71,
+      "ramp_rate": 4.73,
+      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
       "eftp": 240.1,
@@ -157,20 +157,20 @@
     "current_metrics": {
       "weight_kg": 66.678154,
       "resting_hr": 44,
-      "hrv": 164.97075,
-      "sleep_quality": 1,
-      "sleep_hours": 8.44,
-      "sleep_formatted": "8h26m"
+      "hrv": null,
+      "sleep_quality": null,
+      "sleep_hours": null,
+      "sleep_formatted": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.23,
-    "hrv_baseline_7d": 144.5,
-    "rhr_baseline_7d": 47.3,
-    "hrv_baseline_28d": 151.1,
+    "recovery_index": null,
+    "hrv_baseline_7d": 142.7,
+    "rhr_baseline_7d": 47.7,
+    "hrv_baseline_28d": 150.0,
     "rhr_baseline_28d": 47.8,
-    "latest_hrv": 164.97075,
-    "latest_rhr": 44,
+    "latest_hrv": null,
+    "latest_rhr": null,
     "acwr": 1.25,
     "acwr_interpretation": "optimal",
     "monotony": 0.58,
@@ -182,7 +182,7 @@
     "multi_sport_detected": false,
     "strain": 151.0,
     "stress_tolerance": 2.6,
-    "load_recovery_ratio": 2.1,
+    "load_recovery_ratio": null,
     "tss_7d_total": 261.0,
     "tss_28d_total": 834.0,
     "zone_distribution_7d": {
@@ -295,7 +295,9 @@
     "phase_detection": {
       "phase": "Build",
       "confidence": "medium",
-      "reason_codes": [],
+      "reason_codes": [
+        "NO_PLANNED_WORKOUTS"
+      ],
       "basis": {
         "stream_1": {
           "ctl_slope": 0.9,
@@ -304,11 +306,11 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.72,
-          "hard_sessions_planned": 2,
+          "planned_tss_delta": null,
+          "hard_sessions_planned": 0,
           "race_proximity": null,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.4,
+          "plan_coverage_current_week": 0.0,
           "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
@@ -320,7 +322,9 @@
       "dossier_agreement": null
     },
     "phase_detected": "Build",
-    "phase_triggers": [],
+    "phase_triggers": [
+      "NO_PLANNED_WORKOUTS"
+    ],
     "seasonal_context": "Late Base / Build",
     "benchmark_indoor": {
       "current_ftp": 244,
@@ -342,10 +346,10 @@
     "p_max": 1041,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-24T23:56:55.445830",
+    "calculation_timestamp": "2026-03-25T02:56:06.152754",
     "data_quality": {
-      "hrv_data_points": 7,
-      "rhr_data_points": 7,
+      "hrv_data_points": 6,
+      "rhr_data_points": 6,
       "activities_7d": 4,
       "activities_28d": 21,
       "planned_workouts_7d": 2,
@@ -552,22 +556,6 @@
   ],
   "wellness_data": [
     {
-      "date": "2026-03-18",
-      "weight_kg": null,
-      "resting_hr": 45,
-      "hrv_rmssd": 155.49358,
-      "hrv_sdnn": null,
-      "sleep_hours": 8.89,
-      "sleep_formatted": "8h53m",
-      "sleep_quality": 1,
-      "sleep_score": 89.0,
-      "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
-      "avg_sleeping_hr": null,
-      "vo2max": null
-    },
-    {
       "date": "2026-03-19",
       "weight_kg": null,
       "resting_hr": 47,
@@ -662,36 +650,29 @@
       "soreness": null,
       "avg_sleeping_hr": null,
       "vo2max": null
-    }
-  ],
-  "planned_workouts": [
-    {
-      "id": 100367096,
-      "date": "2026-03-24",
-      "name": "hill effort",
-      "type": "WORKOUT",
-      "planned_tss": 81,
-      "duration_hours": 1.02,
-      "duration_formatted": "1h1m",
-      "workout_summary": "20m @146W | 3\u00d730s @207W / 30s rec | 15s @366W | 5m @122W | 2\u00d71m30s @460W / 10m rec | 10m @122W",
-      "description": "-20m ramp 50-70%\n\n3x\n-30s 85%\n-30s 50%\n\n3m 50%\n\n-15s 150%\n-5m 50%\n\n2x\n-90s 185% Segment effort all out target 450-470w\n-10m 50%\n\n-10m 50%"
     },
     {
-      "id": 100367356,
-      "date": "2026-03-24",
-      "name": "if i fail",
-      "type": "WORKOUT",
-      "planned_tss": 47,
-      "duration_hours": 0.7,
-      "duration_formatted": "42m",
-      "workout_summary": "8m @158W | 3\u00d77m @231W / 3m rec | 4m @122W",
-      "description": "-8m ramp 50-80%\n\n3x\n-7m 95% Threshold hold steady\n-3m 50%\n\n-4m 50%"
+      "date": "2026-03-25",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
     }
   ],
+  "planned_workouts": [],
   "workout_summary_stats": {
-    "attempted": 2,
-    "success": 2,
-    "patternA": 2,
+    "attempted": 0,
+    "success": 0,
+    "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
     "bail_no_match": 0
@@ -701,8 +682,8 @@
     "total_training_formatted": "3h30m",
     "total_tss": 261,
     "activities_count": 4,
-    "avg_hrv": 144.5,
-    "avg_resting_hr": 47.3
+    "avg_hrv": 142.7,
+    "avg_resting_hr": 47.7
   },
   "race_calendar": {
     "next_race": null,
