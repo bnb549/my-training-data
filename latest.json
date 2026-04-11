@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-11T15:48:52.093389",
+    "last_updated": "2026-04-11T16:47:23.649779",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.74"
@@ -26,21 +26,21 @@
     "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 134.7,
-        "delta_pct": null
+        "status": "green",
+        "value": 122.7,
+        "baseline_7d": 133.0,
+        "delta_pct": -7.7
       },
       "rhr": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 49.3,
-        "delta_bpm": null
+        "status": "amber",
+        "value": 53,
+        "baseline_7d": 49.9,
+        "delta_bpm": 3.1
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "amber",
+        "hours": 6.67,
+        "quality": 2
       },
       "acwr": {
         "status": "green",
@@ -51,8 +51,8 @@
         "value": null
       },
       "ri": {
-        "status": "unavailable",
-        "value": null
+        "status": "green",
+        "value": 0.87
       },
       "tsb": {
         "status": "green",
@@ -60,10 +60,10 @@
       }
     },
     "signal_summary": {
-      "green": 2,
-      "amber": 0,
+      "green": 4,
+      "amber": 2,
       "red": 0,
-      "unavailable": 5
+      "unavailable": 1
     },
     "phase_context": {
       "phase": "Build",
@@ -73,7 +73,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 2 green, 0 amber (threshold 3), 0 red. Note: 5 signals unavailable \u2014 limited data.",
+    "reason": "P3 green light. 4 green, 2 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -109,7 +109,7 @@
       "atl": 31.48,
       "tsb": -3.81,
       "ramp_rate": 1.65,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "eftp": 242.0,
@@ -146,21 +146,21 @@
     },
     "current_metrics": {
       "weight_kg": 66.678154,
-      "resting_hr": 48,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "resting_hr": 53,
+      "hrv": 122.74282,
+      "sleep_quality": 2,
+      "sleep_hours": 6.67,
+      "sleep_formatted": "6h40m"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "hrv_baseline_7d": 134.7,
-    "rhr_baseline_7d": 49.3,
-    "hrv_baseline_28d": 142.4,
-    "rhr_baseline_28d": 47.1,
-    "latest_hrv": null,
-    "latest_rhr": null,
+    "recovery_index": 0.87,
+    "hrv_baseline_7d": 133.0,
+    "rhr_baseline_7d": 49.9,
+    "hrv_baseline_28d": 141.7,
+    "rhr_baseline_28d": 47.3,
+    "latest_hrv": 122.74282,
+    "latest_rhr": 53,
     "acwr": 1.16,
     "acwr_interpretation": "optimal",
     "monotony": 0.51,
@@ -172,7 +172,7 @@
     "multi_sport_detected": false,
     "strain": 133.0,
     "stress_tolerance": 2.6,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 3.0,
     "tss_7d_total": 261.0,
     "tss_28d_total": 897.0,
     "zone_distribution_7d": {
@@ -269,19 +269,23 @@
         "note": "Compares 7d vs 28d Seiler TID to detect distribution shifts. pi_delta positive = more polarized acutely."
       }
     },
-    "consistency_index": null,
+    "consistency_index": 0.0,
     "consistency_details": {
-      "planned_days": 0,
+      "planned_days": 1,
       "completed_days": 2,
       "matched_days": 0,
-      "note": "No planned workouts in period"
+      "planned_dates": [
+        "2026-04-11"
+      ],
+      "completed_dates": [
+        "2026-04-06",
+        "2026-04-08"
+      ]
     },
     "phase_detection": {
       "phase": "Build",
       "confidence": "medium",
-      "reason_codes": [
-        "NO_PLANNED_WORKOUTS"
-      ],
+      "reason_codes": [],
       "basis": {
         "stream_1": {
           "ctl_slope": 0.9,
@@ -290,11 +294,11 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": null,
-          "hard_sessions_planned": 0,
+          "planned_tss_delta": 1.58,
+          "hard_sessions_planned": 1,
           "race_proximity": null,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.0,
+          "plan_coverage_current_week": 0.2,
           "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
@@ -306,9 +310,7 @@
       "dossier_agreement": null
     },
     "phase_detected": "Build",
-    "phase_triggers": [
-      "NO_PLANNED_WORKOUTS"
-    ],
+    "phase_triggers": [],
     "seasonal_context": "Late Base / Build",
     "benchmark_indoor": {
       "current_ftp": 244,
@@ -330,13 +332,13 @@
     "p_max": 1030,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-11T15:48:52.092790",
+    "calculation_timestamp": "2026-04-11T16:47:23.649162",
     "data_quality": {
-      "hrv_data_points": 6,
-      "rhr_data_points": 6,
+      "hrv_data_points": 7,
+      "rhr_data_points": 7,
       "activities_7d": 4,
       "activities_28d": 15,
-      "planned_workouts_7d": 0,
+      "planned_workouts_7d": 1,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -619,13 +621,13 @@
     {
       "date": "2026-04-11",
       "weight_kg": null,
-      "resting_hr": null,
-      "hrv_rmssd": null,
+      "resting_hr": 53,
+      "hrv_rmssd": 122.74282,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 6.67,
+      "sleep_formatted": "6h40m",
+      "sleep_quality": 2,
+      "sleep_score": 81.0,
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
@@ -633,11 +635,23 @@
       "vo2max": null
     }
   ],
-  "planned_workouts": [],
+  "planned_workouts": [
+    {
+      "id": 103712930,
+      "date": "2026-04-11",
+      "name": "Over-Unders 3x10",
+      "type": "WORKOUT",
+      "planned_tss": 94,
+      "duration_hours": 1.42,
+      "duration_formatted": "1h25m",
+      "workout_summary": "15m @140W | 2\u00d73m @219W / 2m rec | 15m @122W",
+      "description": "3x10min Over-Unders: 3min@90%/2min@105% x2 per block. 5min recovery between blocks. FTP=244W.\n\nWarmup\n- 15m ramp 50-65%\n\n2x\n- 3m 90%\n- 2m 105%\n\n3x\n- 5m 50%\n- 3m 90%\n- 2m 105%\n- 3m 90%\n- 2m 105%\n\nCooldown\n- 15m ramp 55-45%"
+    }
+  ],
   "workout_summary_stats": {
-    "attempted": 0,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 1,
+    "success": 1,
+    "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 0,
     "bail_no_match": 0
@@ -647,8 +661,8 @@
     "total_training_formatted": "3h55m",
     "total_tss": 261,
     "activities_count": 4,
-    "avg_hrv": 134.7,
-    "avg_resting_hr": 49.3
+    "avg_hrv": 133.0,
+    "avg_resting_hr": 49.9
   },
   "race_calendar": {
     "next_race": null,
